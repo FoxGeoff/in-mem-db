@@ -23,9 +23,28 @@ export class ProductsComponent implements OnInit {
 
   deleteProduct(id: number) {
 
+    this.productService.deleteProduct(id).subscribe((ret) => {
+      console.log("Product deleted: ", ret);
+    })
   }
 
-  updateProduct(id: number) {
-    
+  updateProduct(product: Product) {
+
+    // because we are using interface instead of class
+    let newProduct = <Product>
+      <unknown>{
+        id: product.id,
+        productName: 'test name',
+        productCode: 123,
+        description: "a new product description",
+        price: 12.33,
+        categoryId: 345,
+        quantityInStock: 5,
+        supplierIds: [123, 456]
+      } as Product;
+
+    this.productService.updateProduct(newProduct).subscribe((ret) => {
+      console.log("Product updated: ", ret);
+    });
   }
 }
