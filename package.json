@@ -52,5 +52,11 @@
       "ts-node": "~8.3.0",
       "typescript": "~3.8.3"
     }
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.1102.1"
+  },
+  "dependencies": {
+    "npm-check-updates": "^11.1.4"
   }
 }
