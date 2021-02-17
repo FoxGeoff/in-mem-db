@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "in-mem-db"
+    }
+  },
+  "defaultProject": "in-mem-db",
+  "cli": {
+    "analytics": false
+  }
 }
