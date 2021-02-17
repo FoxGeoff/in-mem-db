@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 import { InMemoryDbService, RequestInfo } from 'angular-in-memory-web-api';
 import { Observable } from 'rxjs';
-import { Product } from './data/interface/product';
-import { ProductCategory } from './data/interface/product-category';
-import { Supplier } from './data/interface/supplier';
-import { ProductCategoryData } from './data/product-category-data';
-import { ProductData } from './data/product-data';
-import { SupplierData } from './data/supplier-data';
+import { Product } from './interface/product';
+import { ProductCategory } from './interface/product-category';
+import { Supplier } from './interface/supplier';
+import { ProductCategoryData } from './product-category-data';
+import { ProductData } from './product-data';
+import { SupplierData } from './supplier-data';
 
 
 @Injectable()

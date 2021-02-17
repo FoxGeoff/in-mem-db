@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 // in-memmory-db
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { DataService } from './data.service';
+import { DataService } from './data/data.service';
 
 import { AppComponent } from './app.component';
 
