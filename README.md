@@ -19,7 +19,7 @@ imports: [
 ]
 ```
 
-## Task: Set up the angular-in-memory-web-api module
+### Task: Set up the angular-in-memory-web-api module
 
 1. Run ```npm install --save angular-in-memory-web-api```
 2. Run ```ng g s data```
@@ -41,7 +41,7 @@ export class DataService implements InMemoryDbService {
 }
 ```
 
-## Task: Import the in-memory web api module
+### Task: Import the in-memory web api module
 
 1. Mock an HttpClient REST API with a delayed responce
 
@@ -70,3 +70,5 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 ```
+
+### Task: Add seed data
