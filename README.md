@@ -19,6 +19,8 @@ imports: [
 ]
 ```
 
+1. TSLint issues <https://stackoverflow.com/questions/65228384/tslint-extension-throwing-errors-in-my-angular-application-running-in-visual-stu>
+
 ### Task: Set up the angular-in-memory-web-api module
 
 1. Run ```npm install --save angular-in-memory-web-api```
@@ -72,5 +74,3 @@ export class AppModule { }
 ```
 
 ### Task: Add seed data
-
-
