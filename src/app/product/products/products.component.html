@@ -1,5 +1,36 @@
 <p>products works!</p>
 
 <ul>
-  <li *ngFor="let product of products"> {{product.description}}</li>
+  <li *ngFor="let product of products">{{ product.description }}</li>
 </ul>
+
+<h1>Product List</h1>
+
+<table style="width: 90%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Quantity</th>
+    <th>Search</th>
+    <th>Supplier</th>
+  </tr>
+  <tr *ngFor="let prod of products">
+    <td>{{ prod.id }}</td>
+    <td>{{ prod.productName }}</td>
+    <td>{{ prod.productCode }}</td>
+    <td>{{ prod.description }}</td>
+    <td>{{ prod.price }}</td>
+    <td>{{ prod.categoryId }}</td>
+    <td>{{ prod.quantityInStock }}</td>
+    <td>{{ prod.searchKey }}</td>
+    <td>{{ prod.supplierIds }}</td>
+    <td>
+      <button (click)="deleteProduct(prod.id)">Delete</button>
+      <button (click)="updateProduct(prod.id)">Update</button>
+    </td>
+  </tr>
+</table>

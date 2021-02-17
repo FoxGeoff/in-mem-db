@@ -21,4 +21,11 @@ export class ProductsComponent implements OnInit {
         })
   }
 
+  deleteProduct(id: number) {
+
+  }
+
+  updateProduct(id: number) {
+    
+  }
 }
