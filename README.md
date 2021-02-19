@@ -78,3 +78,21 @@ export class AppModule { }
 ### Task: Add CRUD methods for products
 
 ### Task: Add Update method for products
+
+```TypeScript
+// because we are using interface instead of class
+    // https://stackoverflow.com/questions/13142635/how-can-i-create-an-object-based-on-an-interface-file-definition-in-typescript
+    // If you want an empty object of an interface, you can do just:
+    let aProduct = <Product>{}
+
+    const newProduct: Product = {
+      id: product.id,
+      productName: 'test name',
+      productCode: '123',
+      description: "a new product description",
+      price: 12.33,
+      categoryId: 345,
+      quantityInStock: 5,
+      supplierIds: [123, 456]
+    }
+```
