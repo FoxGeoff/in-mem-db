@@ -33,7 +33,7 @@ export class ProductsComponent implements OnInit {
     // because we are using interface instead of class
     // https://stackoverflow.com/questions/13142635/how-can-i-create-an-object-based-on-an-interface-file-definition-in-typescript
     // If you want an empty object of an interface, you can do just:
-    let aProduct = <Product>{}
+    let aProduct = <Product>{} // an  empty object of type Property
 
     const newProduct: Product = {
       id: product.id,
