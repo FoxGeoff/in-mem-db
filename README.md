@@ -76,3 +76,5 @@ export class AppModule { }
 ### Task: Add seed data
 
 ### Task: Add CRUD methods for products
+
+### Task: Add Update method for products
